@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Big Sister! 🎂</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0f2fe, #ccfbf1);
+            font-family: 'Segoe UI', Georgia, serif;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 15px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: #0ea5e9;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(14, 165, 233, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 25px;
+            user-select: none;
+        }
+        .btn-link:hover {
+            transform: scale(1.05);
+            background-color: #0369a1;
+        }
+
+        #layer1, #layer2, #layer3 {
+            display: none;
+        }
+
+        body:not(:has(:target)) #layer1 { display: flex !important; }
+        #layer2:target { display: block !important; }
+        #layer3:target { display: block !important; }
+
+        /* ================= SCREEN 1 ================= */
+        #layer1 {
+            flex-direction: column;
+            align-items: center;
+        }
+        .big-heart {
+            background-color: #0ea5e9;
+            display: inline-block;
+            height: 100px;
+            position: relative;
+            transform: rotate(-45deg);
+            width: 100px;
+            animation: beat 0.8s infinite alternate cubic-bezier(0.25, 0.8, 0.25, 1);
+            margin-bottom: 40px;
+            box-shadow: -10px 10px 35px rgba(14, 165, 233, 0.5);
+        }
+        .big-heart:before, .big-heart:after {
+            content: "";
+            background-color: #0ea5e9;
+            border-radius: 50%;
+            height: 100px;
+            position: absolute;
+            width: 100px;
+        }
+        .big-heart:before { top: -50px; left: 0; }
+        .big-heart:after { top: 0; left: 50px; }
+        @keyframes beat { to { transform: scale(1.15) rotate(-45deg); } }
+
+        /* ================= SCREEN 2 ================= */
+        .shayari-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .sister-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .shayari-text {
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #0f766e;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        /* ================= SCREEN 3: PARAGRAPH CARD ================= */
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+            padding: 35px 25px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            text-align: center;
+        }
+        .paragraph-title {
+            color: #0f766e;
+            font-size: 1.8rem;
+            margin-bottom: 18px;
+            font-weight: bold;
+        }
+        .paragraph-text {
+            color: #334155;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ================= SCREEN 1 ================= -->
+        <div id="layer1">
+            <div class="big-heart"></div>
+            <a href="#layer2" class="btn-link">Click Me 💙</a>
+        </div>
+
+        <!-- ================= SCREEN 2 ================= -->
+        <div id="layer2">
+            <div class="shayari-box">
+                <img src="sister.jpg.jpg" class="sister-img" alt="My Sister" onerror="this.src='https://unsplash.com'">
+                <p class="shayari-text">
+                    💙❤️"You are my sunshine, my bright star,
+                     No matter where, you’re never far."💙❤️<br>
+                    From childhood whispers to grown-up cheer,
+                     Your love, dear sister, I hold so near...!" 💙❤️
+                     ❣️🩵"LOVE YOU SO MUCH MERI JAAN MERA BAACHA🤭🫣😘 AND SORRY 🤐😭FOR EVERTHING 🤭🫣😘MY JAAN LOVE YOU SOOOOOOO MUCHHHH...😘🫡!"💞💘
+                </p>
+                <a href="#layer3" class="btn-link">Read Message ✉️</a>
+            </div>
+        </div>
+
+        <!-- ================= SCREEN 3 ================= -->
+        <div id="layer3">
+            <div class="card">
+                <div class="paragraph-title">Happy Birthday My Dear Firdous Momin! 💙🥳🎉💙</div>
+                
+                <p class="paragraph-text">To my incredible Big Sister, thank you for being my constant support system🩵💙, my silent protector, and my absolute best friend💖🩵. Growing up with you has been a blessing. You hold our family together with your beautiful heart, and your strength inspires me every single day💙💓.On your special day, I wish you unbounded joy, massive success, and absolute happiness.🥹💗💝💙</p>
+                
+                <p class="paragraph-text">Allah aapko hamesha khush rakhe, aapki har dua qubool kare❣️🩵, aur aapko bohot saari kamyabi aur achhi health de🥰🩵. Aap hamesha aise hi hansti muskurati raho🩵💓, Di. Love you to infinity! ✨💙</p>
+                <p class="paragraph-text">Keep chasing your dreams, Di, because you deserve the world. 💞💘</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
